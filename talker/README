@@ -1,0 +1,22 @@
+SmallNet - talker
+
+---
+
+This is code for the master I2C device. 
+
+It recieves commands on the usart and performs the action on the I2C network. 
+
+Implemented commands are
+
+- Read from connected device:
+COMMAND: r <address>
+REPLY: <device_type> <value>
+
+- List available devices:
+COMMAND: l
+REPLY: <address> <address> ...
+
+- Write to device:
+COMMAND: w <address> <value>
+REPLY: 
+
